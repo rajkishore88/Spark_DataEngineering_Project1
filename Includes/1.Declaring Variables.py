@@ -5,4 +5,4 @@ presentation_folder_path="abfss://presentation@adlsstreamingpocgn2.dfs.core.wind
 
 # COMMAND ----------
 
-
+project_path="/Repos/Raj/Spark_DataEngineering_Project1"
