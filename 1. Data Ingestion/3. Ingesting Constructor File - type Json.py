@@ -1,9 +1,10 @@
 # Databricks notebook source
-# MAGIC %run /F1_Practice_Project/setup/4.Connection_to_raw_Container
+# MAGIC %md
+# MAGIC ### Setting up the Environment
 
 # COMMAND ----------
 
-# MAGIC %run "../Includes/1. Storage path"
+# MAGIC %run "/Repos/Raj/Spark_DataEngineering_Project1/setup/Setup Script"
 
 # COMMAND ----------
 
@@ -62,7 +63,3 @@ constructor_final_df.write.parquet(f"{processed_folder_path}/constructor",mode="
 # COMMAND ----------
 
 display(dbutils.fs.ls(f"{processed_folder_path}/constructor"))
-
-# COMMAND ----------
-
-

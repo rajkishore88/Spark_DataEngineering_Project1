@@ -13,11 +13,7 @@
 
 # COMMAND ----------
 
-project_path
-
-# COMMAND ----------
-
-# MAGIC %run f"{project_path}"/setup/1.Connecting_adls_using_acess_keys
+# MAGIC %run /Repos/Raj/Spark_DataEngineering_Project1/setup/1.Connecting_adls_using_acess_keys
 
 # COMMAND ----------
 

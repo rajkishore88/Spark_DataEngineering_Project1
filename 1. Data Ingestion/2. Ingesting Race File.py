@@ -1,9 +1,10 @@
 # Databricks notebook source
-# MAGIC %run /F1_Practice_Project/setup/4.Connection_to_raw_Container
+# MAGIC %md
+# MAGIC ### Setting up the Environment
 
 # COMMAND ----------
 
-# MAGIC %run "/F1_Practice_Project/Includes/1. Storage path"
+# MAGIC %run "/Repos/Raj/Spark_DataEngineering_Project1/setup/Setup Script"
 
 # COMMAND ----------
 
@@ -54,7 +55,3 @@ race_df1.write.mode("overwrite").partitionBy("race_year").parquet(f"{processed_f
 # COMMAND ----------
 
 display(dbutils.fs.ls(f"{processed_folder_path}/race"))
-
-# COMMAND ----------
-
-

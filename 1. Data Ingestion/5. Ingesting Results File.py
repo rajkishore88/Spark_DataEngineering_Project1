@@ -1,14 +1,10 @@
 # Databricks notebook source
 # MAGIC %md
-# MAGIC ####1. Create the Connection to the RAW Container
+# MAGIC ####Setting up the Environment
 
 # COMMAND ----------
 
-# MAGIC %run ../setup/4.Connection_to_raw_Container
-
-# COMMAND ----------
-
-# MAGIC %run "../Includes/1. Storage path"
+# MAGIC %run "/Repos/Raj/Spark_DataEngineering_Project1/setup/Setup Script"
 
 # COMMAND ----------
 

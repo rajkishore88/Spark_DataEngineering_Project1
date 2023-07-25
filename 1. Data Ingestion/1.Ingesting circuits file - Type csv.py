@@ -9,11 +9,12 @@
 
 # COMMAND ----------
 
-# MAGIC %run /F1_Practice_Project/setup/1.Connecting_adls_using_acess_keys
+# MAGIC %md 
+# MAGIC ### Setting the environment
 
 # COMMAND ----------
 
-# MAGIC %run "/F1_Practice_Project/Includes/1. Storage path"
+# MAGIC %run "/Repos/Raj/Spark_DataEngineering_Project1/setup/Setup Script"
 
 # COMMAND ----------
 

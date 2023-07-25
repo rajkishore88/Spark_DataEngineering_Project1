@@ -1,5 +1,10 @@
 # Databricks notebook source
-# MAGIC %run /F1_Practice_Project/setup/4.Connection_to_raw_Container
+# MAGIC %md
+# MAGIC ### Setting up the Environment
+
+# COMMAND ----------
+
+# MAGIC %run "/Repos/Raj/Spark_DataEngineering_Project1/setup/Setup Script"
 
 # COMMAND ----------
 
