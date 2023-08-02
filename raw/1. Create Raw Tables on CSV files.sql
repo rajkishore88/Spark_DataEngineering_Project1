@@ -1,14 +1,22 @@
 -- Databricks notebook source
--- MAGIC %run /F1_Practice_Project/setup/4.Connection_to_raw_Container
+-- MAGIC %md
+-- MAGIC ### Setting up the Environment
 
 -- COMMAND ----------
 
--- MAGIC %run "/F1_Practice_Project/Includes/1. Storage path"
+-- MAGIC %run "/Repos/Raj/Spark_DataEngineering_Project1/setup/Setup Script"
+
+-- COMMAND ----------
+
+-- MAGIC %python 
+-- MAGIC display(dbutils.fs.ls("abfss://raw@adlsstreamingpocgn2.dfs.core.windows.net"))
+-- MAGIC
+-- MAGIC
 
 -- COMMAND ----------
 
 -- MAGIC %python
--- MAGIC dbutils.fs.ls(f"{raw_folder_path}")
+-- MAGIC display(dbutils.fs.ls(f"{raw_folder_path}"))
 
 -- COMMAND ----------
 
@@ -23,7 +31,7 @@
 -- COMMAND ----------
 
 DROP TABLE IF EXISTS f1_raw.circuits;
-CREATE Table f1_raw.circuits(circuitId Int,
+CREATE Table IF NOT EXISTS f1_raw.circuits(circuitId Int,
 circuitRef String,
 name String,
 location String,
@@ -60,6 +68,10 @@ options(path "abfss://raw@adlsstreamingpocgn2.dfs.core.windows.net/races.csv",he
 -- COMMAND ----------
 
 select * from f1_raw.Races;
+
+-- COMMAND ----------
+
+desc extended f1_raw.Races
 
 -- COMMAND ----------
 
